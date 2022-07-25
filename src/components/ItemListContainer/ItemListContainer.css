@@ -1,0 +1,9 @@
+.styleTittle{
+  color: #03BECA;
+  padding: 20px;
+  
+}
+
+.styleTittle small{
+    font-size: 2rem;
+}
