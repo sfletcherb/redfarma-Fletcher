@@ -1,0 +1,9 @@
+.styleMenu{
+    color:rgba(91, 91, 95, 0.8) !important;
+    font-weight: 400 !important;
+}
+
+.styleMenu:hover{
+    color: rgb(76, 88, 160) !important;
+    font-weight: 700 !important;
+}

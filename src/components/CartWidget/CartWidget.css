@@ -1,0 +1,8 @@
+.stylesCar{
+    font-size: 30px;
+    color: rgb(76, 88, 160);
+}
+
+.stylesCar:hover{
+    color: #03BECA;
+}
