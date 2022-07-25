@@ -1,6 +1,7 @@
 .stylesCar{
-    font-size: 30px;
+    font-size: 32px;
     color: rgb(76, 88, 160);
+    margin-left: 50px;
 }
 
 .stylesCar:hover{
