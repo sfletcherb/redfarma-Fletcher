@@ -1,4 +1,5 @@
 import './ItemListContainer.css'
+import ItemCount from '../ItemCount/ItemCount'
 
 const Greeting = (props) => {
 
@@ -14,7 +15,9 @@ const Greeting = (props) => {
 function ItemListContainer() {
     return <>
         <Greeting promo={'Los mejores precios'} greeting={'de toda la oferta disponible en droguerias.'}>Encuentra</Greeting>
-
+        <div>
+        <ItemCount/>
+        </div>
     </>
 }
 
