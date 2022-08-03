@@ -1,5 +1,8 @@
+import { useState, useEffect } from 'react';
 import './ItemListContainer.css'
-import ItemCount from '../ItemCount/ItemCount'
+import getData from '../../Data/Data'
+import ItemList from '../ItemList/ItemList';
+
 
 const Greeting = (props) => {
 
@@ -13,10 +16,23 @@ const Greeting = (props) => {
 
 
 function ItemListContainer() {
+
+    const [data, setData] = useState([])
+
+    useEffect(() => {
+        getData
+            .then((resp) => setData(resp))
+            .catch(err => console.log(err))
+
+    },[]);
+
+
+
     return <>
         <Greeting promo={'Los mejores precios'} greeting={'de toda la oferta disponible en droguerias.'}>Encuentra</Greeting>
+
         <div>
-        <ItemCount/>
+            <ItemList productList={data}/>
         </div>
     </>
 }
