@@ -10,7 +10,7 @@ export default function ItemList({ productList }) {
 
                 return (
 
-                    <Item key={product.id} img={product.pictureUrl} name={product.title} price={product.price}></Item>
+                    <Item key={product.id} id={product.id} img={product.pictureUrl} name={product.title} price={product.price}></Item>
                 );
 
 

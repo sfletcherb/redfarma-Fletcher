@@ -1,0 +1,23 @@
+.styleItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    height: 350px;
+    width: 100%;
+    background-color: rgba(76, 88, 160,0.1);
+    color: rgb(91, 91, 95);
+    
+   
+}
+
+.styleItem h1{
+    color: rgb(76, 88, 160);
+}
+
+.stylePrice{
+    color: #03BECA;
+    font-weight: 700;
+    font-size: 1.8rem;
+}

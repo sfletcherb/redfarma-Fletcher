@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './ItemListContainer.css'
-import getData from '../../Data/Data'
-import ItemList from '../ItemList/ItemList';
+import getData from '../Data/Data'
+import ItemList from '../components/ItemList/ItemList';
 
 
 const Greeting = (props) => {
@@ -21,7 +21,7 @@ function ItemListContainer() {
 
     useEffect(() => {
         getData
-            .then((resp) => setData(resp))
+            .then((res) => setData(res))
             .catch(err => console.log(err))
 
     },[]);

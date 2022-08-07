@@ -20,9 +20,9 @@ function NavBar() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#Cotización" className='styleMenu'>Cotización</Nav.Link>
-                        <Nav.Link href="#Servicios" className='styleMenu'>Servicios</Nav.Link>
-                        <Nav.Link href="#Ordenes" className='styleMenu'>Ordenes</Nav.Link>
+                        <Nav.Link href="#Salud y medicamentos" className='styleMenu'>Salud y medicamentos</Nav.Link>
+                        <Nav.Link href="#Belleza" className='styleMenu'>Belleza</Nav.Link>
+                        <Nav.Link href="#Cuidado personal" className='styleMenu'>Cuidado personal</Nav.Link>
 
                     </Nav>
                     <Form className="d-flex">
