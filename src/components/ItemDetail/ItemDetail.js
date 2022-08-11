@@ -1,20 +1,20 @@
 import './ItemDetail.css'
 import ItemCount from '../ItemCount/ItemCount'
 
-function ItemDetail ({dataItem}) {
+function ItemDetail ({title, description, price, pictureUrl, id}) {
 
     return (
 
         <div className='styleItem'>
             <div className='styleImg'>
-                <img src={dataItem.pictureUrl} alt="Medicamento" width="220"
+                <img src={pictureUrl} alt="Medicamento" width="220"
                         height="220"></img>
             </div>
             <div>
-                <p>Código: {dataItem.id}</p>
-                <h1>{dataItem.title}</h1>
-                <p>{dataItem.Description}</p>
-                <p className='stylePrice'>{dataItem.price}</p>
+                <p>Código: {id}</p>
+                <h1>{title}</h1>
+                <p>{description}</p>
+                <p className='stylePrice'>{price}</p>
 
                 <ItemCount />
             </div>

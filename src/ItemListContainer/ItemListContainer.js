@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import './ItemListContainer.css'
 import getData from '../Data/Data'
+import {getCategory} from '../Data/Data'
 import ItemList from '../components/ItemList/ItemList';
-
+import {useParams} from 'react-router-dom';
 
 const Greeting = (props) => {
 
@@ -18,13 +19,22 @@ const Greeting = (props) => {
 function ItemListContainer() {
 
     const [data, setData] = useState([])
+    const {categoryId} = useParams()
 
     useEffect(() => {
-        getData
-            .then((res) => setData(res))
-            .catch(err => console.log(err))
 
-    },[]);
+        if(!categoryId){
+            getData
+            .then((res) => setData(res))
+            .catch(err => console.log(err)) 
+        }else{
+            getCategory(categoryId)
+            .then((res) => setData(res))
+            .catch(err => console.log(err)) 
+        }
+        
+
+    },[categoryId]);
 
 
 

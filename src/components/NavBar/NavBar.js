@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import logoRedfarma from '../../Image/logo.png'
 import CartWidget from '../CartWidget/CartWidget'
 import './NavBar.css';
+import {NavLink} from 'react-router-dom'
 
 function NavBar() {
 
@@ -13,16 +14,16 @@ function NavBar() {
 
         <Navbar collapseOnSelect expand="lg" bg="light">
             <Container>
-                <Navbar.Brand href="#home">
+                <Navbar.Brand href='/'>
                     <img src={logoRedfarma} width="200"
                         height="110" alt='RedFarma'></img>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#Salud y medicamentos" className='styleMenu'>Salud y medicamentos</Nav.Link>
-                        <Nav.Link href="#Belleza" className='styleMenu'>Belleza</Nav.Link>
-                        <Nav.Link href="#Cuidado personal" className='styleMenu'>Cuidado personal</Nav.Link>
+                        <NavLink to='/category/medicamentos' className={({isActive})=> isActive? 'styleMenu': 'styleMenuInactive'} >Medicamentos</NavLink>
+                        <NavLink to='/category/belleza' className={({isActive})=> isActive? 'styleMenu': 'styleMenuInactive'}>Belleza</NavLink>
+                        <NavLink to= '/category/cuidadopersonal' className={({isActive})=> isActive? 'styleMenu': 'styleMenuInactive'}>Cuidado personal</NavLink>
 
                     </Nav>
                     <Form className="d-flex">

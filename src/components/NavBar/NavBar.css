@@ -1,9 +1,15 @@
-.styleMenu{
-    color:rgba(91, 91, 95, 0.8) !important;
-    font-weight: 400 !important;
-}
 
-.styleMenu:hover{
+.styleMenu{
     color: rgb(76, 88, 160) !important;
     font-weight: 700 !important;
+    text-decoration: none;
+    margin-right: 10px;
 }
+
+.styleMenuInactive{
+    color:rgba(91, 91, 95, 0.8) !important;
+    font-weight: 400 !important;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
