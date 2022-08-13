@@ -1,9 +1,22 @@
 import './ItemDetail.css'
 import ItemCount from '../ItemCount/ItemCount'
 
+import {useState} from 'react';
+import { Link } from 'react-router-dom';
+
 function ItemDetail ({title, description, price, pictureUrl, id}) {
 
+    const [addCart, setAddCart] = useState(false);
+
+    const onAdd = (quantityToAdd) =>{
+    
+        setAddCart(true);
+
+    }
+
     return (
+
+        
 
         <div className='styleItem'>
             <div className='styleImg'>
@@ -15,8 +28,13 @@ function ItemDetail ({title, description, price, pictureUrl, id}) {
                 <h1>{title}</h1>
                 <p>{description}</p>
                 <p className='stylePrice'>{price}</p>
-
-                <ItemCount />
+                
+                {
+                    addCart 
+                    ? <Link to='/cart'>Terminar mi compra</Link>
+                    : <ItemCount initial={1} stock={5} onAdd={onAdd}/>
+                }
+               
             </div>
 
         </div>
