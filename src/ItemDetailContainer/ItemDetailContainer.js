@@ -1,20 +1,20 @@
 import ItemDetail from '../components/ItemDetail/ItemDetail'
 import { useState, useEffect } from 'react';
-import {getItem} from '../Data/Data';
 import {useParams} from 'react-router-dom';
-
+import {getFirestore, doc, getDoc} from 'firebase/firestore'
 
 
 function ItemDetailContainer () {
 
-    const [data, setData] = useState();
+    const [data, setData] = useState(); // Actualiza el estado interno de un componente
     const {id} = useParams();
 
     useEffect(()=>{
 
-        getItem(id)
-        .then((data) => setData(data))
-        .catch(err => console.log(err))
+        const querydb = getFirestore();
+        const queryDoc = doc(querydb, 'products', id)
+        getDoc(queryDoc)
+        .then(res => setData({id:res.id, ...res.data()}))
     },[id])
 
 

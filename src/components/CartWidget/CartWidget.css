@@ -7,3 +7,9 @@
 .stylesCar:hover{
     color: #03BECA;
 }
+
+.numCart{
+    font-size: 1rem;
+    font-weight: 500;
+    color:rgba(91, 91, 95, 0.8)
+}

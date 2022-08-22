@@ -2,7 +2,10 @@ import Card from 'react-bootstrap/Card';
 import './Item.css';
 import {Link} from 'react-router-dom'
 
+
 function Item({ id, img, name, price }) {
+
+    
 
     return (
 

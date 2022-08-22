@@ -1,0 +1,35 @@
+.styleCart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    height: 350px;
+    width: 100%;
+    color: rgb(91, 91, 95);
+    
+   
+}
+
+.styleTitle{
+    color: rgb(76, 88, 160);
+    font-size: 2rem;
+}
+
+.style__botonAñadir{
+    color: #fff;
+    font-weight: 400;
+    border: 8px solid #03BECA;
+    border-radius: 35px;
+    background: #03BECA;
+    white-space: nowrap;
+    width: 8rem;
+    font-size: 0.9rem;
+    padding: 0 0.3rem;
+}
+
+.style__botonAñadir:hover{
+    border: 8px solid #4C58A0;
+    background: #4C58A0;
+    color: #fff;
+}

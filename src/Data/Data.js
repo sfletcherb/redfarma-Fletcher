@@ -1,3 +1,4 @@
+/*
 const Data = [
     {
         "id": "01",
@@ -86,3 +87,5 @@ export const getItem = (id) =>{
 }
 
 console.log(getItem())
+
+*/
