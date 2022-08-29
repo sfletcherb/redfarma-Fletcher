@@ -3,3 +3,23 @@
     color: rgb(76, 88, 160);
     text-align: center;
 }
+
+
+.styleTotalButton{
+    color: #fff;
+    font-weight: 400;
+    border: 5px solid #4C58A0;
+    border-radius: 2px;
+    background: #4C58A0;
+    white-space: nowrap;
+    width: 8rem;
+    font-size: 0.9rem;
+    padding: 0 0.3rem;
+    margin-left: 20px;
+}
+
+.styleTotalButton:hover{
+    border: 8px solid #03BECA;
+    background: #03BECA;
+    color: #fff;
+}
