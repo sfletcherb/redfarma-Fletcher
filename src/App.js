@@ -1,8 +1,8 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react';
 import NavBar from './components/NavBar/NavBar';
-import ItemListContainer from './ItemListContainer/ItemListContainer'
-import ItemDetailContainer from './ItemDetailContainer/ItemDetailContainer'
+import ItemListContainer from './components/List/ItemListContainer/ItemListContainer'
+import ItemDetailContainer from './components/Detail/ItemDetailContainer/ItemDetailContainer'
 import Cart from './components/Cart/Cart'
 import { Routes, Route } from 'react-router-dom';
 import  CartCustomContext  from './Context/CartContext';

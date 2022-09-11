@@ -2,7 +2,7 @@ import './ItemDetail.css'
 import ItemCount from '../ItemCount/ItemCount'
 import {useContext, useState} from 'react';
 import { Link } from 'react-router-dom';
-import {CartContext} from '../../Context/CartContext'
+import {CartContext} from '../../../Context/CartContext'
 
 
 
@@ -37,7 +37,7 @@ function ItemDetail ({title, description, price, pictureUrl, id}) {
                 
                 {
                     addCart 
-                    ? <Link to='/cart'>Terminar mi compra</Link>
+                    ? <Link to='/cart' className='styleLink1'>Terminar mi compra</Link>
                     : <ItemCount initial={1} stock={5} onAdd={onAdd}/>
                 }
                

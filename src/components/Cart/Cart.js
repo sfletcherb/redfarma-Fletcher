@@ -1,7 +1,7 @@
 import { getFirestore, addDoc, collection } from 'firebase/firestore'
 import React, { useContext } from "react";
 import { CartContext } from "../../Context/CartContext";
-import ItemCart from '../ItemCart/ItemCart'
+import ItemCart from '../List/ItemCart/ItemCart'
 import './Cart.css'
 
 
@@ -29,13 +29,13 @@ export default function Cart() {
             .then(({ id }) => console.log(id, order))
     }
 
-    
+    const  mostrarData = Boolean(cartData.length);
 
     return (
 
         <div>
             {
-                (cartData.length > 0) ? cartData.map((item) => {
+                (mostrarData) ? Array.isArray(cartData) && cartData.map((item) => {
                     return <ItemCart key={item.id} id={item.id} item={item} />
                 })
                     : "No hay elementos en el Cart"

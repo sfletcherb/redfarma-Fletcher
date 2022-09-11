@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import logoRedfarma from '../../Image/logo.png'
-import CartWidget from '../CartWidget/CartWidget'
+import CartWidget from './CartWidget/CartWidget'
 import './NavBar.css';
 import {NavLink} from 'react-router-dom'
 
